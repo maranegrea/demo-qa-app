@@ -11,7 +11,6 @@ public class DemoQaHomePage extends Page {
     private final SelenideElement elementsCard = cardsCategory.find(".card-body>h5", 0);
     private final SelenideElement alertsCard = cardsCategory.find(".card-body>h5", 2);
     private final SelenideElement widgetsCard = cardsCategory.find(".card-body>h5", 3);
-    //$(".card.top-card:nth-child(4)");
     private final SelenideElement interactionsCard = cardsCategory.find(".card-body>h5", 4);
     private final SelenideElement bookStoreCard = cardsCategory.find(".card-body>h5", 5);
 

@@ -3,6 +3,7 @@ package navigation.menu;
 
 import config.BaseTestConfig;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.fasttrackit.DemoQaHomePage;
@@ -29,6 +30,7 @@ public class NavigationMenuElementsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Categories lists")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Elements menu list is displayed")
     public void elements_menu_list_is_displayed() {
@@ -36,6 +38,7 @@ public class NavigationMenuElementsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Text box")
     @Severity(SeverityLevel.CRITICAL)
     @Description("User's details were filled in text box fields.")
     public void select_textBox_and_fill_in_fields_a_message_confirmation_is_displayed() {
@@ -53,13 +56,14 @@ public class NavigationMenuElementsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Check box")
     @Severity(SeverityLevel.NORMAL)
     @Description("Click on downloads from check box.")
     public void click_on_downloads_from_check_box_a_success_message_is_displayed() {
         elementsPage.clickOnCheckBoxLink();
         elementsPage.clickOnToogleButton();
         elementsPage.clickOnDownloadCheckBox();
-        String message = elementsPage.gettextFromMessageResult();
+        String message = elementsPage.getTextFromMessageResult();
         assertEquals(message, "You have selected :\n" +
                 "downloads\n" +
                 "wordFile\n" +
@@ -67,6 +71,7 @@ public class NavigationMenuElementsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Radio button")
     @Severity(SeverityLevel.NORMAL)
     @Description("Select impressive radio button.")
     public void select_impressive_radio_from_radioButton_a_success_message_is_displayed() {
@@ -79,6 +84,7 @@ public class NavigationMenuElementsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Upload file")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Upload a file.")
     public void upload_a_file_from_download_and_upload() {

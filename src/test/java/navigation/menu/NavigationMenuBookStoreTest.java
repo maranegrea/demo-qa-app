@@ -2,6 +2,7 @@ package navigation.menu;
 
 import config.BaseTestConfig;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.fasttrackit.DemoQaHomePage;
@@ -25,6 +26,7 @@ public class NavigationMenuBookStoreTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Categories lists")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Book store menu list is displayed.")
     public void book_store_menu_list_is_displayed() {
@@ -33,8 +35,9 @@ public class NavigationMenuBookStoreTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Register new user")
     @Severity(SeverityLevel.CRITICAL)
-    @Description("New user is made on book store page.")
+    @Description("New user registers on book store page.")
     public void sign_up_on_book_store() {
         bookStoresMenuSetup();
         bookStorePage.clickOnLoginLink();

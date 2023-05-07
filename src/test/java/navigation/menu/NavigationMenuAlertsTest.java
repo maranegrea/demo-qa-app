@@ -2,6 +2,7 @@ package navigation.menu;
 
 import config.BaseTestConfig;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.fasttrackit.DemoQaHomePage;
@@ -27,6 +28,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Categories lists")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Alerts menu list is displayed")
     public void alerts_menu_list_is_displayed() {
@@ -34,6 +36,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Browser windows")
     @Severity(SeverityLevel.NORMAL)
     @Description("A new tab is opened.")
     public void open_new_tab_from_browser_windows() {
@@ -45,6 +48,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Alerts")
     @Severity(SeverityLevel.NORMAL)
     @Description("Simple alert is opened.")
     public void open_simple_alert_from_alerts_a_small_message_box_is_opened() {
@@ -54,6 +58,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Alerts")
     @Severity(SeverityLevel.NORMAL)
     @Description("Confirmation alert is opened.")
     public void open_alert_box_a_confirmation_alert_is_opened() {
@@ -65,6 +70,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Alerts")
     @Severity(SeverityLevel.NORMAL)
     @Description("Prompt alert is opened.")
     public void open_prompt_box_alert_and_fill_in_alert_text_box() {
@@ -99,6 +105,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Modals")
     @Severity(SeverityLevel.NORMAL)
     @Description("Small modal is opened.")
     public void open_small_modal_a_new_modal_dialogue_is_opened() {
@@ -111,6 +118,7 @@ public class NavigationMenuAlertsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Modals")
     @Severity(SeverityLevel.NORMAL)
     @Description("Large modal is opened.")
     public void open_large_modal_a_new_modal_dialogue_is_opened() {

@@ -6,6 +6,7 @@ import config.BaseTestConfig;
 import data.provider.CalendarDate;
 import data.provider.CalendarDateDateProvider;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.fasttrackit.DemoQaHomePage;
@@ -32,6 +33,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Categories lists")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Widgets menu list is displayed")
     public void widgets_menu_list_is_displayed() {
@@ -40,6 +42,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Accordion")
     @Severity(SeverityLevel.MINOR)
     @Description("Collapse heading.")
     public void select_accordion_and_collapse_section1_heading() {
@@ -51,6 +54,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Accordion")
     @Severity(SeverityLevel.MINOR)
     @Description("Expand heading.")
     public void select_accordion_and_expand_section2_heading() {
@@ -62,6 +66,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Autocomplete container")
     @Severity(SeverityLevel.NORMAL)
     @Description("Add multiple colours in autocomplete container.")
     public void type_red_blue_black_in_autocomplete_container_multiple_colours() {
@@ -76,6 +81,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test(dependsOnMethods = "type_red_blue_black_in_autocomplete_container_multiple_colours")
+    @Feature("Autocomplete container")
     @Severity(SeverityLevel.NORMAL)
     @Description("Add multiple colours in autocomplete container and delete one of them.")
     public void type_red_blue_black_in_autocomplete_container_and_delete_red() {
@@ -90,6 +96,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Autocomplete container")
     @Severity(SeverityLevel.NORMAL)
     @Description("Add one colour in autocomplete container.")
     public void type_single_colour_white_in_autocomplete_container() {
@@ -100,6 +107,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test(dataProviderClass = CalendarDateDateProvider.class, dataProvider = "validPredefinedDate")
+    @Feature("Date picker")
     @Severity(SeverityLevel.NORMAL)
     @Description("Choose a predefined date from data picker.")
     public void choose_a_predefined_date_in_data_picker(CalendarDate calendarDate) {
@@ -115,6 +123,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Date picker")
     @Severity(SeverityLevel.NORMAL)
     @Description("Check the current date from data picker.")
     public void current_date_is_correctly_displayed_in_data_picker() {
@@ -133,6 +142,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Slider")
     @Severity(SeverityLevel.NORMAL)
     @Description("Load slider.")
     public void load_slider_to_79() {
@@ -143,6 +153,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Progress bar")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Load progress bar and reset.")
     public void load_progress_bar_to_maximum_and_reset() {
@@ -155,6 +166,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Tool tips")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Hover over a text field.")
     public void hover_over_empty_text_field_from_tool_tips() {
@@ -166,6 +178,7 @@ public class NavigationMenuWidgetsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Dropdown container")
     @Severity(SeverityLevel.NORMAL)
     @Description("Choose desired options from dropdown containers.")
     public void click_on_select_menu_and_choose_from_available_options() {

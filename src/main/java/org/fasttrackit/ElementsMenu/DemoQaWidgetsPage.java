@@ -122,7 +122,6 @@ public class DemoQaWidgetsPage extends Page {
         return null;
     }
 
-
     public String selectCustomMonth(String month) {
         monthPicker.click();
         String customMonth = String.format("[value='%s']", month);
@@ -204,7 +203,6 @@ public class DemoQaWidgetsPage extends Page {
         this.colours = $(multipleColoursOption);
         this.colours.click();
         return colours;
-
     }
 
     public void openMultiSelectDropdown() {

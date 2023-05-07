@@ -1,6 +1,7 @@
 import com.codeborne.selenide.Selenide;
 import config.BaseTestConfig;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.fasttrackit.DemoQaHomePage;
@@ -12,6 +13,7 @@ public class BannerImageHomePageTest extends BaseTestConfig {
     DemoQaHomePage page;
 
     @Test
+    @Feature("Banner image")
     @Severity(SeverityLevel.NORMAL)
     @Description("When clicking on the banner image, a new page is opened.")
     public void banner_image_redirects_to_registration_page() {

@@ -8,9 +8,4 @@ public class Page {
         System.out.println("Opening: " + demoQaUrl);
         open(demoQaUrl);
     }
-
-   // public void refreshPage() {
-      //  Selenide.refresh();
-
-    // }
 }

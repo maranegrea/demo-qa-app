@@ -2,6 +2,7 @@ package navigation.menu;
 
 import config.BaseTestConfig;
 import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.fasttrackit.DemoQaHomePage;
@@ -25,6 +26,7 @@ public class NavigationMenuInteractionsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Categories lists")
     @Description("Interactions menu list is displayed.")
     @Severity(SeverityLevel.CRITICAL)
     public void interactions_menu_list_is_displayed() {
@@ -34,6 +36,7 @@ public class NavigationMenuInteractionsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Drag and drop")
     @Severity(SeverityLevel.NORMAL)
     @Description("Drag and drop small box into the bigger one.")
     public void drag_and_drop_small_box_into_the_big_box() {
@@ -45,6 +48,7 @@ public class NavigationMenuInteractionsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Drag and drop")
     @Severity(SeverityLevel.NORMAL)
     @Description("Drag and drop small box.")
     public void drag_and_drop_simple_small_box() {
@@ -59,6 +63,7 @@ public class NavigationMenuInteractionsTest extends BaseTestConfig {
     }
 
     @Test
+    @Feature("Resize box")
     @Severity(SeverityLevel.NORMAL)
     @Description("Resize box to maximum size.")
     public void resize_box_to_maximum() {

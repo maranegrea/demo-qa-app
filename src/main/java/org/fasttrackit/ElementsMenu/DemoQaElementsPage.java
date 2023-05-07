@@ -109,7 +109,7 @@ public class DemoQaElementsPage extends Page {
         return uploadedFile.getText();
     }
 
-    public String gettextFromMessageResult() {
+    public String getTextFromMessageResult() {
         return checkBoxMessageResult.getText();
     }
 }
